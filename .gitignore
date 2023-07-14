@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/.dockerignore
+!/cue.mod
+!/pipelines
+!/tasks
+!/build_tool.cue
+!/README.md
+!/LICENSE
+!/benthos
