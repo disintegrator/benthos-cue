@@ -5,16 +5,16 @@ package benthos
 // observability defaults.
 
 #Config: {
-  logger: {
-    level: string | *"${LOG_LEVEL:info}"
-    format: string | *"${LOG_FORMAT:json}"
-    add_timestamp: bool | *true
-    timestamp_name: string | *"ts"
-  }
+	logger: {
+		level:          string | *"${LOG_LEVEL:info}"
+		format:         string | *"${LOG_FORMAT:json}"
+		add_timestamp:  bool | *true
+		timestamp_name: string | *"ts"
+	}
 
-  metrics: prometheus: {
-    use_histogram_timing: bool | *true
-    add_process_metrics: bool | *true
-    add_go_metrics: bool | *true
-  }
+	metrics: prometheus: {
+		use_histogram_timing: bool | *true
+		add_process_metrics:  bool | *true
+		add_go_metrics:       bool | *true
+	}
 }
